@@ -9,7 +9,15 @@ public class GoodWineItem extends ItemType {
 
     @Override
     public void updateQuality() {
-        increaseQuality();
         decreaseSellIn();
+
+        if (item.sellIn < 0) {
+            increaseQuality();
+        } else {
+            decreaseQuality();
+        }
+
+
+
     }
 }
