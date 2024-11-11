@@ -25,7 +25,6 @@ class GildedTrosTest {
                 new Item("Backstage passes", 20, 10),
                 new Item("Backstage passes", 10, 10),
                 new Item("Backstage passes", 5, 10),
-                new Item("Backstage passes", 5, 10),
                 new Item("B-DAWG KEYCHAIN", 10, 50),
                 new Item("Ugly Variable Names", 10, 10),
         };
