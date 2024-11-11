@@ -7,17 +7,17 @@ public class BackstagePassItem extends ItemType{
 
     @Override
     public void updateQuality() {
-        if (Item.sellIn <= 10) {
+        if (item.sellIn <= 10) {
             increaseQuality();
             increaseQuality();
         }
-        if (Item.sellIn <= 5) {
+        if (item.sellIn <= 5) {
             increaseQuality();
             increaseQuality();
             increaseQuality();
         }
-        if (Item.sellIn < 0){
-            Item.quality = 0;
+        if (item.sellIn < 0){
+            item.quality = 0;
         }
     }
 }

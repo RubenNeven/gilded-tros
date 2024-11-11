@@ -17,8 +17,13 @@ class GildedTros {
     public void updateQuality() {
 
         for (Item item : items) {
-            switch (Item.name) {
-                case "Good Wine": new GoodWineItem(item).updateQuality();
+            switch (item.name) {
+                case "Good Wine":
+                    new GoodWineItem(item).updateQuality();
+                    break;
+                default:
+                    new NormalItem(item).updateQuality();
+                    break;
             }
         }
 

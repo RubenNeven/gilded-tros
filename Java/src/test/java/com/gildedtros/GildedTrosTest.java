@@ -2,6 +2,8 @@ package com.gildedtros;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class GildedTrosTest {
@@ -16,11 +18,15 @@ class GildedTrosTest {
 
     @Test
     void goodWineItem() {
-        Item[] items = new Item[] { new Item("Good Wine", 5, 40) };
+        Item[] items = new Item[] {
+                new Item("Good Wine", 6, 40),
+                new Item("Normal Item 1", 5, 30),
+                new Item("Normal Item 2", -1, 40),
+        };
         GildedTros app = new GildedTros(items);
         app.updateQuality();
-        Item item = app.getItems()[0];
-        System.out.println(item);
+        Arrays.stream(app.getItems()).forEach(System.out::println);
+
     }
 
 }

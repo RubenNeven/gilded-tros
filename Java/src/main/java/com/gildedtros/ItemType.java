@@ -2,7 +2,7 @@ package com.gildedtros;
 
 public abstract class ItemType {
 
-    private final Item item;
+    public final Item item;
 
     public ItemType(Item item) {
         this.item = item;
@@ -11,14 +11,14 @@ public abstract class ItemType {
     public abstract void updateQuality();
 
     public void decreaseSellIn() {
-        --Item.sellIn;
+        --item.sellIn;
     }
 
     public void decreaseQuality() {
-        if (Item.quality > 0 ) --Item.quality;
+        if (item.quality > 0 ) --item.quality;
     }
 
     public void increaseQuality() {
-        if (Item.quality < 50 ) ++Item.quality;
+        if (item.quality < 50 ) ++item.quality;
     }
 }
