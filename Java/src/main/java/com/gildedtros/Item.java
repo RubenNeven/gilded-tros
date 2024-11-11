@@ -2,11 +2,11 @@ package com.gildedtros;
 
 public class Item {
 
-    public String name;
+    public static String name;
 
-    public int sellIn;
+    public static int sellIn;
 
-    public int quality;
+    public static int quality;
 
     public Item(String name, int sellIn, int quality) {
         this.name = name;

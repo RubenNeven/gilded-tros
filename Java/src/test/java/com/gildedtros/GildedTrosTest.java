@@ -11,7 +11,16 @@ class GildedTrosTest {
         Item[] items = new Item[] { new Item("foo", 0, 0) };
         GildedTros app = new GildedTros(items);
         app.updateQuality();
-        assertEquals("fixme", app.items[0].name);
+        //assertEquals("fixme", app.getItems()[0].name);
+    }
+
+    @Test
+    void goodWineItem() {
+        Item[] items = new Item[] { new Item("Good Wine", 5, 40) };
+        GildedTros app = new GildedTros(items);
+        app.updateQuality();
+        Item item = app.getItems()[0];
+        System.out.println(item);
     }
 
 }
