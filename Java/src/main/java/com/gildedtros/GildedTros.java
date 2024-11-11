@@ -1,5 +1,7 @@
 package com.gildedtros;
 
+import com.gildedtros.factories.ItemFactory;
+
 class GildedTros {
 
     private final Item[] items;

@@ -1,5 +1,6 @@
-package com.gildedtros;
+package com.gildedtros.factories;
 
+import com.gildedtros.Item;
 import com.gildedtros.enums.ItemTypeEnum;
 import com.gildedtros.items.*;
 import com.gildedtros.mappers.ItemNameMapper;
