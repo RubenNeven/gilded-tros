@@ -9,6 +9,7 @@ public class BackstageItem extends ItemType {
 
     @Override
     public void updateQuality() {
+        decreaseSellIn();
         if (item.sellIn <= 10 && item.sellIn > 5) {
             increaseQuality();
             increaseQuality();
@@ -17,9 +18,11 @@ public class BackstageItem extends ItemType {
             increaseQuality();
             increaseQuality();
             increaseQuality();
+
         }
         if (item.sellIn <= 0){
             item.quality = 0;
+
         }
     }
 }
