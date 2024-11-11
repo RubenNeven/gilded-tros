@@ -1,6 +1,6 @@
 package com.gildedtros.items;
 
-import com.gildedtros.Item;
+import com.gildedtros.model.Item;
 
 public class BackstageItem extends ItemType {
     public BackstageItem(Item item) {

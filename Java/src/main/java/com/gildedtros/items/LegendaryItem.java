@@ -1,6 +1,6 @@
 package com.gildedtros.items;
 
-import com.gildedtros.Item;
+import com.gildedtros.model.Item;
 
 public class LegendaryItem extends ItemType {
 

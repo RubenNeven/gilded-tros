@@ -1,6 +1,7 @@
 package com.gildedtros;
 
 import com.gildedtros.factories.ItemFactory;
+import com.gildedtros.model.Item;
 
 class GildedTros {
 

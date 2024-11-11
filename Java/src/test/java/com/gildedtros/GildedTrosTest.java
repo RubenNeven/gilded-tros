@@ -1,5 +1,6 @@
 package com.gildedtros;
 
+import com.gildedtros.model.Item;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;

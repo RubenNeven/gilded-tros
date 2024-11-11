@@ -1,6 +1,6 @@
 package com.gildedtros.mappers;
 
-import com.gildedtros.Item;
+import com.gildedtros.model.Item;
 import com.gildedtros.enums.ItemTypeEnum;
 
 import static com.gildedtros.enums.ItemTypeEnum.*;
