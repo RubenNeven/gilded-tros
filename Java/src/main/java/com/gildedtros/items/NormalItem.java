@@ -1,6 +1,8 @@
-package com.gildedtros;
+package com.gildedtros.items;
 
-public class NormalItem extends ItemType{
+import com.gildedtros.Item;
+
+public class NormalItem extends ItemType {
 
     public NormalItem(Item item) {
         super(item);

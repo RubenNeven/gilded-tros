@@ -1,4 +1,6 @@
-package com.gildedtros;
+package com.gildedtros.items;
+
+import com.gildedtros.Item;
 
 public abstract class ItemType {
 
@@ -10,15 +12,15 @@ public abstract class ItemType {
 
     public abstract void updateQuality();
 
-    public void decreaseSellIn() {
+    protected void decreaseSellIn() {
         --item.sellIn;
     }
 
-    public void decreaseQuality() {
+    protected void decreaseQuality() {
         if (item.quality > 0 ) --item.quality;
     }
 
-    public void increaseQuality() {
+    protected void increaseQuality() {
         if (item.quality < 50 ) ++item.quality;
     }
 }

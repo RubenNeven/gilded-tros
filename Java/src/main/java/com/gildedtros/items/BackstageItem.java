@@ -1,13 +1,15 @@
-package com.gildedtros;
+package com.gildedtros.items;
 
-public class BackstagePassItem extends ItemType{
-    public BackstagePassItem(Item item) {
+import com.gildedtros.Item;
+
+public class BackstageItem extends ItemType {
+    public BackstageItem(Item item) {
         super(item);
     }
 
     @Override
     public void updateQuality() {
-        if (item.sellIn <= 10) {
+        if (item.sellIn <= 10 && item.sellIn > 5) {
             increaseQuality();
             increaseQuality();
         }
@@ -16,7 +18,7 @@ public class BackstagePassItem extends ItemType{
             increaseQuality();
             increaseQuality();
         }
-        if (item.sellIn < 0){
+        if (item.sellIn <= 0){
             item.quality = 0;
         }
     }

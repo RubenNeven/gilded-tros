@@ -1,6 +1,8 @@
-package com.gildedtros;
+package com.gildedtros.items;
 
-public class GoodWineItem extends ItemType{
+import com.gildedtros.Item;
+
+public class GoodWineItem extends ItemType {
     public GoodWineItem(Item item) {
         super(item);
     }

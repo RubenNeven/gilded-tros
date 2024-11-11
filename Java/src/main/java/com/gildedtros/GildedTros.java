@@ -1,6 +1,11 @@
 package com.gildedtros;
 
-import java.util.Arrays;
+import com.gildedtros.items.BackstageItem;
+import com.gildedtros.items.GoodWineItem;
+import com.gildedtros.items.NormalItem;
+import com.gildedtros.items.SmellyItem;
+import com.gildedtros.mappers.ItemNameMapper;
+import com.gildedtros.enums.ItemTypeEnum;
 
 class GildedTros {
 
@@ -15,11 +20,19 @@ class GildedTros {
     }
 
     public void updateQuality() {
-
         for (Item item : items) {
-            switch (item.name) {
-                case "Good Wine":
+            ItemTypeEnum itemType = ItemNameMapper.map(item);
+            switch (itemType) {
+                case WINE_ITEM:
                     new GoodWineItem(item).updateQuality();
+                    break;
+                case BACKSTAGE_ITEM:
+                    new BackstageItem(item).updateQuality();
+                    break;
+                case SMELLY_ITEM:
+                    new SmellyItem(item).updateQuality();
+                    break;
+                case LEGENDARY_ITEM:
                     break;
                 default:
                     new NormalItem(item).updateQuality();
